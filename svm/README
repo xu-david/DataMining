@@ -1,0 +1,29 @@
+# Title       : CSCI573 Assignment 5
+# Author      : David Xu (yx5)
+# Description : Python implementation of the SVM training
+#               algorithm (Algorithm 21.1). The dual form is
+#               solved using stochastic gradient ascent and
+#               hinge loss.
+
+----------
+
+Usage: ./assign5.py -i <inputFile> -k <KernelType>
+
+Available Kernels:
+  linear   Linear
+  quad     Quadratic (Homogeneous)
+
+----------
+
+The program reads in a path to the comma-delimited input
+and the name of a kernel from the list provided. At this
+time, only the linear and homogeneous kernels are
+available.
+
+Example outputs are provided in the ./out/ directory for
+the following three combinations:
+
+Input File          Kernel              Output
+iris-slwc.txt       linear              iris-slwc_linear.out
+iris-slwc.txt       quad                iris-slwc_quad.out
+iris-PC.txt         quad                iris-PC_quad.out
